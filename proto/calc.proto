@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package main;
+option go_package="./proto";
+
+message Request{
+    int32 a=1;
+    int32 b=2;
+
+}
+message Response{
+    int32 result=1;
+}
+
+service AddService{
+  rpc Add (Request) returns (Response);
+  rpc Mul (Request) returns (Response);
+
+}
