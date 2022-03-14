@@ -28,7 +28,7 @@ func (s *server) Mul(ctx context.Context, req *pb.Request) (*pb.Response, error)
 }
 
 func main() {
-	lis, err := net.Listen("tcp", "localhost:8080")
+	lis, err := net.Listen("tcp", "localhost:4040")
 	if err != nil {
 		log.Fatalln(err)
 
